@@ -1,0 +1,40 @@
+concept_star
+<- sc_node_class;
+=> nrel_main_idtf:
+  [звезда](* <- lang_ru;; *);
+	[star](* <- lang_en;; *);
+<- rrel_key_sc_element:
+  ...
+  (*
+    => nrel_main_idtf:
+      [Опр. (звезда)](* <- lang_ru;; *);
+      [Def. (star)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_transaltion:
+      ...
+      (*
+        -> rrel_example:
+          [Звезда — массивное самосветящееся небесное тело, состоящее из газа и плазмы, в котором происходят, происходили или будут происходить термоядерные реакции.](* <- lang_ru;; *);;
+      *);
+      ...
+      (*
+        -> rrel_example:
+          [A star is a luminous celestial object of plasma held together by self-gravity.](* <- lang_en;; *);;
+      *);;
+      <= nrel_using_constants:
+            {
+                concept_celestial_object
+            };;
+  *);
+
+=> nrel_structure:
+  ... 
+   (*
+       <-sc_node_not_binary_tuple;;
+       ->concept_core
+           (* <- sc_node_class;; *);;
+       ->concept_convection_zone
+           (* <- sc_node_class;; *);;
+       ->concept_radiation_zone
+           (* <- sc_node_class;; *);;
+   *);;

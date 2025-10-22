@@ -1,0 +1,54 @@
+concept_spectral_class
+<- sc_node_class;
+=> nrel_main_idtf:
+	[спектральный класс](* <- lang_ru;; *);
+	[spectral class](* <- lang_en;; *);
+=> nrel_idtf:
+  [Harvard spectral classification](* <- lang_en;; *);
+<- rrel_key_sc_element:
+  ...
+  (*
+    => nrel_main_idtf:
+    [Опр. (спектральный класс)](* <- lang_ru;; *);
+    [Def. (spectral class)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+      ...
+      (*
+        -> rrel_example:
+           [Спектральный класс — класс звёзды по виду ее спектра, зависящего от температуры.]
+           (* <- lang_ru;; *);;
+      *);
+      ...
+      (*
+        -> rrel_example:
+           [Spectral class is the class of star based on its spectral characteristics, depends on temerature.]
+           (* <- lang_en;; *);;
+      *);;
+    <= nrel_using_constants:
+      {
+        concept_star;
+        concept_temperature
+      };;
+  *);
+=> nrel_note: ...
+(*
+  <= nrel_sc_text_translation: ...
+  (*
+    -> rrel_example:
+      [Подавляющее большинство звёзд может быть отнесено к одному из основных классов: O, B, A, F, G, K, M. В таком порядке эти классы образуют непрерывную последовательность по уменьшению эффективной температуры звезды и по цвету — от голубых к красным.]
+      (* <- lang_ru;; *);;
+  *);;
+  <= nrel_using_constants:
+    {
+      concept_star;
+      concept_temperature;
+      class_O;
+      class_B;
+      class_A;
+      class_G;
+      class_F;
+      class_K;
+      class_M
+    };;
+*);;

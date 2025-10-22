@@ -1,0 +1,31 @@
+concept_natural_satellite
+<- sc_node_class;
+=> nrel_main_idtf:
+    [естественный спутник](* <- lang_ru;; *);
+    [natural satellite](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (естественный спутник)](* <- lang_ru;; *);
+            [Def. (natural satellite)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Естественный спутник - небесное тело, вращающееся вокруг другого небесного тела в космосе под действием его гравитации.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A natuaral satellite is a celestial object, that orbits another celestial object in space under the influence of its gravity.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_natural_satellite;
+        concept_celestial_object;
+        concept_space
+        };;
+    *);;

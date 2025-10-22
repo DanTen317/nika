@@ -1,0 +1,49 @@
+concept_small_sollar_system_body
+<- sc_node_class;
+=> nrel_main_idtf:
+    [малое тело Солнечной системы](* <- lang_ru;; *);
+    [small Solar System body](* <- lang_en;; *);
+=> nrel_idtf:
+    [SSSB](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (малое тело Солнечной системы)](* <- lang_ru;; *);
+            [Def. (cosmall Solar System bodymet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Малое тело Солнечной системы — объект Солнечной системы, который не являются ни планетой, ни карликовой планетой, ни естественным спутником.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A small Solar System body is an object in the Solar System that is neither a planet, a dwarf planet, nor a natural satellite.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_small_sollar_system_body;
+        concept_planet;
+        concept_dwarf_planet;
+        concept_natural_satellite
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [данный термин объединяет самые малые объекты солнечной системы](* <- lang_ru;; *);;
+    *);;
+*);
+=> nrel_decomposition: ...
+(*
+    <- sc_node_tuple;;
+    <- concept_asteroid;;
+    <- concept_comet;;
+    <- concept_cosmic_dust;;
+    <- concept_meteoroid;;
+*);;

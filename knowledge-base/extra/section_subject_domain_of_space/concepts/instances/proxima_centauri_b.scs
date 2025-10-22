@@ -1,0 +1,6 @@
+proxima_centauri_b
+<- concept_exoplanet;
+=> nrel_main_idtf:
+  [Проксима Центавра b](* <- lang_ru;; *);
+=> nrel_main_idtf:
+  [Proxima Centauri b](* <- lang_en;; *);;

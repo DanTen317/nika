@@ -1,0 +1,8 @@
+ida
+<- concept_asteroid;
+=> nrel_main_idtf:
+  [Ида](* <- lang_ru;; *);
+=> nrel_main_idtf:
+  [Ida](* <- lang_en;; *);
+=> nrel_tranforms_into:
+  ida_fragment;;

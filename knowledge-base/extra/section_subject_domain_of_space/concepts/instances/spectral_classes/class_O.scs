@@ -1,0 +1,10 @@
+class_O
+<- concept_spectral_class;
+=> nrel_main_idtf:
+  [спектральный класс O](* <- lang_ru;; *);
+  [spectral class O](* <- lang_en;; *);
+=> nrel_min_temperature:
+  [30000 K];
+=> nrel_color:
+	[голубой](* <- lang_ru;; *);
+	[blue](* <- lang_en;; *);;

@@ -1,0 +1,30 @@
+concept_space
+<- sc_node_class;
+=> nrel_main_idtf:
+    [космос](* <- lang_ru;; *);
+    [space](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (космос)](* <- lang_ru;;*);
+            [Def. (space)](* <- lang_ru;;*);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Космос - относительно пустые участки Вселенной, которые лежат вне границ атмосфер небесных тел.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [Space is the expanse that exists beyond Earth's atmosphere and between celestial bodies.]
+                    (* <- lang_en;; *);;
+            *);;
+        <= nrel_using_constants:
+            {
+                concept_universe;
+                concept_celestial_object
+            };;
+    *);;

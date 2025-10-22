@@ -1,0 +1,43 @@
+nrel_spectral_class
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+	[спектральный класс*] (* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[stellar class*] (* <- lang_en;; *);
+=> nrel_first_domain: concept_star;
+=> nrel_second_domain: concept_stellar_class;
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+          [Опр. (спектральный класс*)]
+          (* <- lang_ru;; *);
+          [Def. (stellar class*)]
+          (* <- lang_en;; *);;
+
+      <- definition;;
+      <= nrel_sc_text_translation:
+           ...
+           (*
+              -> rrel_example:
+               [Спектральный класс - класс звезды в зависимости от ее спектра.]
+               (* <- lang_ru;; *);;
+           *);
+           ...
+           (*
+              -> rrel_example:
+               [Stellar class is the class of stars based on its spectral characteristics.]
+               (* <- lang_en;; *);;
+           *);;
+      <= nrel_using_constants:
+		{
+            concept_star;
+            concept_spectral_class
+        };;
+  *);;

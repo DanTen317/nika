@@ -1,0 +1,37 @@
+concept_comet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [комета](* <- lang_ru;; *);
+    [comet](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (комета)](* <- lang_ru;; *);
+            [Def. (comet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Комета — малое небесное тело Солнечной системы, движущееся по вытянутой орбите, в виде конического сечения, вокруг Солнца и образующее хвост из газа и пыли при прохождении близко к нему.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A comet is an icy, small Solar System body that warms and begins to release gases when passing close to the Sun.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_comet;
+        concept_small_sollar_system_body
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [состоит из льда, пыли и замерзших газов](* <- lang_ru;; *);;
+    *);;
+*);;

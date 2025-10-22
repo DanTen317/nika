@@ -1,0 +1,41 @@
+concept_terrestrial_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [планета земной группы](* <- lang_ru;; *);
+    [terrestrial planet](* <- lang_en;; *);
+=> nrel_idtf:
+    [tellurian planet](* <- lang_en;; *);
+    [telluric planet](* <- lang_en;; *);
+    [rocky planet](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (планета гигант)](* <- lang_ru;; *);
+            [Def. (terrestrial planet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Планета земной группы — это планета, состоящая в основном из силикатов, горных пород или металлов.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A terrestrial planet is a planet that is composed primarily of silicate, rocks or metals.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_terrestrial_planet;
+        concept_planet
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [В солнечной системе к данной группе относятся Меркурий, Венера, Земля и Марс.](* <- lang_ru;; *);;
+    *);;
+*);;

@@ -1,0 +1,8 @@
+proxima_centauri
+<- concept_star;
+=> nrel_main_idtf:
+  [Проксима Центавра](* <- lang_ru;; *);
+=> nrel_main_idtf:
+  [Proxima Centauri](* <- lang_en;; *);
+=> nrel_orbits:
+  proxima_centauri_b;;

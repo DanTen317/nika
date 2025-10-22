@@ -1,0 +1,40 @@
+concept_minor_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [малая планета](* <- lang_ru;; *);
+    [minor planet](* <- lang_en;; *);
+=> nrel_idtf:
+    [планетоид](* <- lang_ru;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (малая планета)](* <- lang_ru;; *);
+            [Def. (minor planet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Малая планета — небесное тело, движущееся по орбите вокруг Солнца и не классифицированное ни как планета, ни как комета.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A minor planet is an astronomical object in direct orbit around the Sun that is exclusively classified as neither a planet nor a comet.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_minor_planet;
+        concept_celestial_object;
+        concept_planet;
+        concept_comet
+        };;
+    *);
+=> nrel_decomposition: ...
+(*
+    <- sc_node_tuple;;
+    <- concept_dwarf_planet;;
+    <- concept_asteroid;;
+*);;

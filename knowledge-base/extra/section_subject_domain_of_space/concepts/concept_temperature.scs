@@ -1,0 +1,27 @@
+concept_temperature
+<- sc_node_class;
+=> nrel_main_idtf:
+  [температура](* <- lang_ru;; *);
+  [temperature](* <- lang_en;; *);
+<- rrel_key_sc_element:
+  ...
+  (*
+    => nrel_main_idtf:
+    [Опр. (температура)](* <- lang_ru;;*);
+    [Def. (temperature)](* <- lang_en;;*);;
+    <- definition;;
+    <= nrel_sc_text_transaltion:
+      ...
+      (*
+        -> rrel_example:
+          [Температура - это скалярная физическая величина, характеризующая нагретость тел.]
+          (* <- lang_ru;; *);;
+      *);
+      ...
+      (*
+        -> rrel_example:
+          [Temperature quantitatively expresses the attribute of hotness or coldness. It reflects the average kinetic energy of the vibrating and colliding atoms making up a substance.]
+          (* <- lang_en;; *);;
+      *);;
+
+  *);;

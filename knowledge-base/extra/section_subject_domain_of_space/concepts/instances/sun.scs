@@ -1,0 +1,12 @@
+sun
+<- concept_star;
+=> nrel_main_idtf:
+  [Солнце](* <- lang_ru;; *);
+=> nrel_main_idtf:
+  [Sun](* <- lang_en;; *);
+=> nrel_orbits:
+  earth;
+=> nrel_orbits:
+  halley;
+=> nrel_orbits:
+  ceres;;

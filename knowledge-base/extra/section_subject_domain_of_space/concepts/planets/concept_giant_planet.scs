@@ -1,0 +1,42 @@
+concept_giant_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [планета гигант](* <- lang_ru;; *);
+    [giant planet](* <- lang_en;; *);
+=> nrel_idtf:
+    [jovian planet](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (планета гигант)](* <- lang_ru;; *);
+            [Def. (giant planet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Планета гигант - планета значительно большая чем Земли.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A giant planet is a diverse type of planet much larger than Earth.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_giant_planet;
+        concept_planet
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [Обычно планеты гиганты состоят из веществ с низкой температурой кипения (газов или льдов), а не из твёрдого вещества, но также могут существовать массивные твёрдые планеты.](* <- lang_ru;; *);;
+    *);...
+    (*
+        -> [В солнечной системе к планетам этой группы относят газовые гиганты Юпитер, Сатурн и ледяные гиганты Уран, Нептун.](* <- lang_ru;; *);;
+    *);;
+*);;

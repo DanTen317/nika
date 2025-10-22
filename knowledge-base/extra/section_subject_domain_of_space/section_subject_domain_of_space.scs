@@ -1,0 +1,54 @@
+section_subject_domain_of_space
+<- atomic_section;
+=> nrel_main_idtf:
+  [Раздел. Предметная область космоса]
+  (* <- lang_ru;; *);
+  [Section. Subject domain of space]
+  (* <- lang_en;; *);;
+
+section_subject_domain_of_space =
+[*
+  subject_domain_of_space
+  <- sc_node_struct;
+  => nrel_main_idtf:
+    [Предметная область космоса]
+    (* <- lang_ru;; *);
+    [Subject domain of space]
+    (* <- lang_en;; *);
+  <- subject_domain;
+  
+  -> rrel_maximum_studied_object_class:
+    concept_space;
+    concept_universe;
+    concept_celestial_object;
+  -> rrel_not_maximum_studied_object_class:
+    concept_subatomic_particle;
+    concept_electromagnetic_radiation;
+    concept_asteroid;
+    concept_comet;
+    concept_cosmic_dust;
+    concept_dwarf_planet;
+    concept_exoplanet;
+    concept_giant_planet;
+    concept_meteoroid;
+    concept_minor_planet;
+    concept_natural_satellite;
+    concept_planet;
+    concept_small_sollar_system_body;
+    concept_terrestrial_planet;
+    concept_star;
+    concept_temperature;
+    concept_luminosity_class;
+    concept_stellar_class;
+    concept_spectral_class;
+  -> rrel_explored_relation:
+    nrel_orbits;
+    nrel_originated_from;
+    nrel_tranforms_into;
+    nrel_has_luminosity_class;
+    nrel_has_spectral_class;
+    nrel_has_stellar_class;
+    nrel_max_temperature;
+    nrel_min_temperature;
+    nrel_spectral_class;;
+*];;

@@ -1,0 +1,12 @@
+class_M
+<- concept_spectral_class;
+=> nrel_main_idtf:
+  [спектральный класс M](* <- lang_ru;; *);
+  [spectral class M](* <- lang_en;; *);
+=> nrel_min_temperature:
+  [2500 K];
+=> nrel_max_temperature:
+  [3800 K];
+=> nrel_color:
+	[красный](* <- lang_ru;; *);
+	[light orangish red](* <- lang_en;; *);;

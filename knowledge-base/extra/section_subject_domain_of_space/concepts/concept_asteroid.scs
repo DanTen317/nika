@@ -1,0 +1,53 @@
+concept_asteroid
+<- sc_node_class;
+=> nrel_main_idtf:
+    [астероид](* <- lang_ru;; *);
+    [asteroid](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (астероид)](* <- lang_ru;; *);
+            [Def. (asteroid)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Астероид — относительно небольшое небесное тело Солнечной системы, движущееся по орбите вокруг Солнца.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [An asteroid is a relatively small celestial object in the Solar System that orbits the Sun.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_asteroid;
+        concept_celestial_object
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [Астероиды значительно уступают по массе и размерам планетам, имеют неправильную форму и не имеют атмосферы, хотя при этом и у них могут быть спутники. Состоят из каменных пород, металлов.](* <- lang_ru;; *);;
+        => nrel_using_constants:
+        {
+        concept_asteroid;
+        concept_planet;
+        concept_natural_satellite
+        };;
+    *);...
+    (*
+        -> [An object larger than a meteoroid that is neither a planet nor an identified comet. Asteroids are rocky, metallic, or icy bodies with no atmosphere.](* <- lang_en;; *);;
+        => nrel_using_constants:
+        {
+        concept_asteroid;
+        concept_planet;
+        concept_meteoroid;
+        concept_comet
+        };;
+    *);;
+*);;

@@ -1,0 +1,43 @@
+concept_dwarf_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [карликовая планета](* <- lang_ru;; *);
+    [dwarf planet](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (карликовая планета)](* <- lang_ru;; *);
+            [Def. (dwarf planet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Карликовая планета - небольшой астрономический объект планетарной массы, вращающийся по прямой орбите вокруг Солнца, достаточно массивный, чтобы быть гравитационно округленным, но недостаточен для достижения орбитального доминирования.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A dwarf planet is a small planetary-mass celestial object that is in direct orbit around the Sun, massive enough to be gravitationally rounded, but insufficient to achieve orbital dominance like the eight classical planets of the Solar System.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_dwarf_planet;
+        concept_celestial_object
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [основное отличие карликовых планет округлой формы, имеющих свою орбиту, от планет это наличие пространства свободного от других тел вблизи своей орбиты. Например Церера округлой формы, вращается вокруг солнца, но находится в поясе астероидов, а значит не является планетой так, как вблизи её орбиты постоянно находятся другие небесные тела.](* <- lang_ru;; *);;
+        => nrel_using_constants:
+        {
+        concept_dwarf_planet;
+        concept_planet;
+        concept_celestial_object
+        };;
+    *);;
+*);;

@@ -1,0 +1,36 @@
+concept_luminosity_class
+<- sc_node_class;
+=> nrel_main_idtf:
+	[класс светимости](* <- lang_ru;; *);
+	[luminosity class](* <- lang_en;; *);
+=> nrel_idtf:
+  [Йеркская классификация](* <- lang_ru;; *);
+  [Yerkes spectral classification](* <- lang_en;; *);
+  [Morgan-Keenan system](* <- lang_en;; *);
+<- rrel_key_sc_element:
+  ...
+  (*
+    => nrel_main_idtf:
+    [Опр. (класс светимости)](* <- lang_ru;; *);
+    [Def. (luminosity class)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+      ...
+      (*
+        -> rrel_example:
+           [Класс светимости - класс звёзды в зависимости от ее светимости (или абсолютной звёздной величины)]
+           (* <- lang_ru;; *);;
+      *);
+      ...
+      (*
+        -> rrel_example:
+           [Luminosity class is a classification of stars according to their luminosity.]
+           (* <- lang_en;; *);;
+      *);;
+    <= nrel_using_constants:
+      {
+        concept_star;
+        concept_luminosity;
+        concept_absolute_magnitude
+      };;
+  *);;

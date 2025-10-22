@@ -1,0 +1,38 @@
+concept_planet
+<- sc_node_class;
+=> nrel_main_idtf:
+    [планета](* <- lang_ru;; *);
+    [planet](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (планета)](* <- lang_ru;; *);
+            [Def. (planet)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Планета - небесное тело, вращающееся вокруг звезды, достаточно массивное для принятия сферической формы под действием собственной гравитации, но неспособное начать термоядерный синтез, и сумевшее очистить окрестности своей орбиты от других объектов.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A planet is a celestial body orbiting a star, massive enough to be spherical under its own gravity, but incapable of initiating nuclear fusion and having managed to clear the vicinity of its orbit of other objects.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_planet;
+        concept_celestial_object;
+        concept_star
+        };;
+    *);
+=> nrel_decomposition: ...
+(*
+    <- sc_node_tuple;;
+    <- concept_giant_planet;;
+    <- concept_terrestrial_planet;;
+    <- concept_exoplanet;;
+*);;

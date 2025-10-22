@@ -1,0 +1,12 @@
+class_B
+<- concept_spectral_class;
+=> nrel_main_idtf:
+  [спектральный класс B](* <- lang_ru;; *);
+  [spectral class B](* <- lang_en;; *);
+=> nrel_min_temperature:
+  [10000 K];
+=> nrel_max_temperature:
+  [30000 K];
+=> nrel_color:
+	[бело-голубой](* <- lang_ru;; *);
+	[bluish white](* <- lang_en;; *);;

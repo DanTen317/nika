@@ -1,0 +1,38 @@
+concept_stellar_class
+<- sc_node_class;
+=> nrel_main_idtf:
+	[спектральный класс](* <- lang_ru;; *);
+	[stellar class](* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+    => nrel_main_idtf:
+      [Опр. (спектральный класс)](* <- lang_ru;; *);
+      [Def. (stellar class)](* <- lang_en;; *);;
+    <- definition;;
+    <= nrel_sc_text_translation:
+      ...
+      (*
+        -> rrel_example:
+           [Спектральный класс — класс звёзды по виду ее спектра, зависящего от температуры и светимости.]
+           (* <- lang_ru;; *);;
+      *);
+      ...
+      (*
+        -> rrel_example:
+           [Stellar class is the class of star based on its spectral characteristics, depends on temerature and luminosity.]
+           (* <- lang_en;; *);;
+      *);;
+    <= nrel_using_constants:
+      {
+        concept_star;
+        concept_temperature;
+        concept_luminosity
+      };;
+	*);
+=> nrel_decomposition: ...
+(*
+    <- sc_node_tuple;;
+    -> concept_spectral_class;;
+    -> concept_luminosity_class;;
+*);;

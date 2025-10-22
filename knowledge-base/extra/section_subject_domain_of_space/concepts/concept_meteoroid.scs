@@ -1,0 +1,39 @@
+concept_meteoroid
+<- sc_node_class;
+=> nrel_main_idtf:
+    [метеороид](* <- lang_ru;; *);
+    [meteoroid](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (метеороид)](* <- lang_ru;; *);
+            [Def. (meteoroid)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Метеороид — небесное тело, промежуточное по размеру между космической пылью и астероидом.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [A meteoroid is a celestial body intermediate in size between cosmic dust and an asteroid.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_meteoroid;
+        concept_celestial_object;
+        concept_cosmic_dust;
+        concept_asteroid
+        };;
+    *);
+=> nrel_note: ...
+(*
+    <= nrel_sc_text_translation: ...
+    (*
+        -> [Метеороид влетевший с огромной скоростью в атмосферу земли, называется метеором, а не сгоревшие осколки метеора, упавшие на поверхность Земли называются метеоритами](* <- lang_ru;; *);;
+    *);;
+*);;

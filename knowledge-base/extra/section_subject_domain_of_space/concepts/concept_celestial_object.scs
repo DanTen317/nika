@@ -1,0 +1,43 @@
+concept_celestial_object
+<- sc_node_class;
+=> nrel_main_idtf:
+    [небесное тело](* <- lang_ru;; *);
+    [celestial object](* <- lang_en;; *);
+=> nrel_idtf:
+    [астрономический объект](* <- lang_ru;; *);
+    [astronomical object](* <- lang_en;; *);
+    [heavenly body](* <- lang_en;; *);
+    [stellar object](* <- lang_en;; *);
+<- rrel_key_sc_element:
+    ...
+    (*
+        => nrel_main_idtf:
+            [Опр. (небесное тело)](* <- lang_ru;; *);
+            [Def. (celestial object)](* <- lang_en;; *);;
+        <- definition;;
+        <= nrel_sc_text_translation:
+            ...
+            (*
+                -> rrel_example:
+                    [Небесное тело - естественное физическое тело, ассоциация, или структура, существующая в наблюдаемой вселенной.]
+                    (* <- lang_ru;; *);;
+            *);...
+            (*
+                -> rrel_example:
+                    [Celestial object is a naturally occurring physical entity, association, or structure that exists within the observable universe.]
+                    (* <- lang_en;; *);;
+            *);;
+        => nrel_using_constants:
+        {
+        concept_celestial_object;
+        concept_universe
+        };;
+    *);
+=> nrel_decomposition: ...
+(*
+    <- sc_node_tuple;;
+    <- concept_planet;;
+    <- concept_natural_satellite;;
+    <- concept_minor_planet;;
+    <- concept_small_sollar_system_body;;
+*);;
