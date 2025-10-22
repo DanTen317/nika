@@ -1,0 +1,8 @@
+class_V
+<- concept_luminosity_class;
+=> nrel_main_idtf:
+  [класс светимости V](* <- lang_ru;; *);
+  [luminosity class V](* <- lang_en;; *);
+=> nrel_idtf:
+  [карлики главной последовательности](* <- lang_ru;; *);
+  [main-sequence stars](* <- lang_en;; *);;

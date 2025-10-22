@@ -1,0 +1,7 @@
+class_G2V
+<- concept_stellar_class;
+=> nrel_main_idtf:
+  [спектральный класс G2V](* <- lang_ru;; *);
+  [stellar class G2V](* <- lang_en;; *);
+=> nrel_has_spectral_class: class_G;
+=> nrel_has_luminosity_class: class_V;;

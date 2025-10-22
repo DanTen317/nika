@@ -5,4 +5,6 @@ proxima_centauri
 => nrel_main_idtf:
   [Proxima Centauri](* <- lang_en;; *);
 => nrel_orbits:
-  proxima_centauri_b;;
+  proxima_centauri_b;
+=> nrel_has_stellar_class: 
+  class_M5.5Ve;;

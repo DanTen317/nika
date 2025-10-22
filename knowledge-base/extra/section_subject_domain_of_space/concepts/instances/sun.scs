@@ -9,4 +9,5 @@ sun
 => nrel_orbits:
   halley;
 => nrel_orbits:
-  ceres;;
+  ceres;
+=> nrel_has_stellar_class: class_G2V;;

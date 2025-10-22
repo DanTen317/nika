@@ -1,0 +1,7 @@
+class_M5.5Ve
+<- concept_stellar_class;
+=> nrel_main_idtf:
+  [спектральный класс M5.5Ve](* <- lang_ru;; *);
+  [stellar class M5.5Ve](* <- lang_en;; *);
+=> nrel_has_spectral_class: class_M;
+=> nrel_has_luminosity_class: class_V;;
