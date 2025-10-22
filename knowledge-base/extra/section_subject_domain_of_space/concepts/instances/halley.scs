@@ -3,6 +3,4 @@ halley
 => nrel_main_idtf:
   [Halley's commet](* <- lang_en;; *);
 => nrel_main_idtf:
-  [комета Галлея](* <- lang_ru;; *);
-=> nrel_originated_from:
-  kuiper_belt;;
+  [комета Галлея](* <- lang_ru;; *);;

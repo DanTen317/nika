@@ -3,4 +3,6 @@ kuiper_belt
 => nrel_main_idtf:
   [Пояс Койпера](* <- lang_ru;; *);
 => nrel_main_idtf:
-  [Kuiper belt](* <- lang_en;; *);;
+  [Kuiper belt](* <- lang_en;; *);
+=> nrel_originated_from:
+  halley;;
