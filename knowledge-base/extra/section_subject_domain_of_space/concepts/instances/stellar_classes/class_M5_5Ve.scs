@@ -1,4 +1,4 @@
-class_M5.5Ve
+class_M5_5Ve
 <- concept_stellar_class;
 => nrel_main_idtf:
   [спектральный класс M5.5Ve](* <- lang_ru;; *);
