@@ -28,7 +28,4 @@ concept_entity_possible_class
 			(* <- lang_en;; *);;
 		*);;
 	*);
--> concept_wit_entity;
--> concept_message_about_entity;
--> concept_message_about_stellar_class;
--> concept_message_about_orignation;;
+-> concept_wit_entity;;
